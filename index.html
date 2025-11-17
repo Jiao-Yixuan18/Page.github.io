@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<title>主页</title> 
+<link rel="stylesheet" href="box.css">
+<style>
+body{
+background-image:url("jhk-1762948451052.jpg");}
+h1{color:rgba(255, 255, 255, 0.959);
+  font-size:100px;
+  text-shadow: 3px 2px 3px #6d6363;
+  text-align: center;
+}
+.header{
+  background-image:url("lu brocade.jpg");
+  height: 100px;
+  padding:10%;
+  width:100%;
+  margin:0;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #052a2987;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    position:sticky;
+    top:0;
+    margin:0;
+}
+.topnav a:hover {
+  background-color: #b4b8b9;
+  color: rgb(107, 143, 133);}
+.topnav {
+  overflow: hidden;
+  background-color: #d2c4c4;
+  padding:2%;
+  font-size:20px;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 9999;
+}
+.topnav a:active{
+    color:rgb(132, 181, 171);
+}
+
+div.one{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100px;
+    box-shadow:25px;
+    width:80%;
+    max-width: 1450px;
+    border: 25px solid rgb(249, 252, 249);
+    padding: 25px;
+    text-align: center;
+    margin:50px auto;   
+}
+.two{
+    font-size: 30px;
+}
+.button{
+    background-color: #487c80;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-align: center;   
+}
+.three a:hover{
+  background-color: #487c80;
+}
+img{
+  width: 700px;
+  height:500px;
+}
+footer {
+            background-color: #2c3e50;
+            color: white;
+            bottom:0cap;
+            text-align:center;
+            padding: 100px;
+            margin-top: 50px;
+        }
+
+</style>
+</head>
+<body>
+<!-- 大标题 -->
+<div class="header"><h1>齐鲁文化</h1></div>
+<!-- 导航 -->
+<div class="topnav">
+<a href="index.html">主页</a>
+<a href="Confucian culture.html">儒家文化</a>
+<a href="mountain tai culture.html">泰山文化</a>
+<a href="folk culture.html">民俗艺术</a>
+<a href="food culture.html">美食文化</a>
+<a href="about.html">关于</a>
+</div>
+<!-- 前言 -->
+ <div class="one">
+<h2>前言</h2>
+<p text-align=center；>听见了吗？<br>
+那是穿越两千五百年的琅琅书声，是孔孟之道润物无声的回响。<br>
+看见了吗？<br>
+那是泰山之巅翻涌的云海，是黄河入海时奏响的黄蓝交响。<br>
+品味到了吗？<br>
+那是鲁菜馆里飘出的浓香，是煎饼卷起的人间烟火气。<br>
+欢迎您，走进山东。<br>
+我们邀您，踏入这片圣土，<br>
+一同解码“一山一水一圣人”的传奇，<br>
+感受“好客山东”最真诚的温度。<br>
+齐鲁文化——在这里，读懂中国。</p></div>
+<!-- 入口 -->
+<div class="one">
+    <img src="background-image3.jpg" alt="山东地图">
+    <p class="two">让我们开启这段旅程吧！<br>第一站：</p>
+    <div class="three"><a href="Confucian culture.html" class="button">儒家文化</a></div>
+</div>
+<footer>
+<div text-color:white>2025<br>某不知名山东人制</div></footer>
+<script>
+  const nav = document.querySelector(".topnav");
+const navOffsetTop = nav.offsetTop;
+window.addEventListener("scroll", () => {
+  if (window.scrollY >= navOffsetTop) {
+    nav.classList.add("sticky-nav");
+  } else {
+    nav.classList.remove("sticky-nav");
+  }
+});
+</script>
+</body>
+</html>
